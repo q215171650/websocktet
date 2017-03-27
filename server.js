@@ -27,7 +27,7 @@ io.on('connection', function(socket) {
 
   notice = setInterval(() => {
     i++
-    console.log(`第${i}次推送`)
+    //console.log(`第${i}次推送`)
     socket.broadcast.emit('notice', `我是服务器推送的消息${i}`)
   }, 5000)
 
