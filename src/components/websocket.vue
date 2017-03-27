@@ -21,8 +21,8 @@
     created () {
       console.log(this.$socket)
       this.$socket.on('notice', (msg) => {
-        debugger
-        console.log(1111)
+        // debugger
+        // console.log(1111)
         this.msgs.push(msg.a)
       })
     },
